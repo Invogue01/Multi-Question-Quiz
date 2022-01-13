@@ -9,3 +9,16 @@
     font-size: 62.5%;
     font-family: 'Times New Roman', Times, serif;
 }
+h1 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+    max-width: 80rem;
+    margin: 0 auto;
+}
