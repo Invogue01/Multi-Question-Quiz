@@ -26,4 +26,4 @@ YOU can save your Name and you score
 
 The following animation demonstrates the application functionality:
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./assets/images/home-screen.png, ./assets/images/quiz.png, ./assets/images/end-screen.png)
