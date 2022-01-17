@@ -92,7 +92,7 @@ input {
   font-size: 1.8rem;
   border: none;
 }
-input:placeholder {
+input::placeholder {
   color: #aaa;
 }
 #username {
@@ -112,6 +112,6 @@ input:placeholder {
 }
 
 .fa-home {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-left: 1rem;
 }
