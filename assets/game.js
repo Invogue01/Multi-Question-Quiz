@@ -73,7 +73,7 @@ startGame = () => {
         display.textContent = seconds;
 
         if (--timer < 0) {
-            timer = duration;
+            timer = alert("Time has run out try again");
         }
     }, 1000);
 }
