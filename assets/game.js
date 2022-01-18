@@ -79,7 +79,7 @@ startGame = () => {
 }
 
 window.onload = function () {
-    var fiveMinutes = 30,
+    var fiveMinutes = 30 * 1,
         display = document.querySelector('#time');
     startTimer(fiveMinutes, display);
 };
