@@ -22,7 +22,9 @@ WHEN the game is over
 YOU can save your Name and you score
 ```
 
-## Mock-Up
+## Mock-Up & Link
+
+[https://invogue01.github.io/Multi-Question-Quiz/](https://invogue01.github.io/Multi-Question-Quiz/)
 
 The following animation demonstrates the application functionality:
 

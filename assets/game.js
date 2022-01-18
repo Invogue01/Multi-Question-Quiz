@@ -3,6 +3,7 @@ const choices = Array.from(document.querySelectorAll(".choice-text"));
 const progressText = document.querySelector("#progressText");
 const scoreText = document.querySelector("#score");
 const progressBarFull = document.querySelector("#progressBarFull");
+let time= document.querySelector("#timer");
 
 let currentQuestion = {}
 let acceptingAnswers = true
@@ -60,16 +61,28 @@ startGame = () => {
   questionCounter = 0;
   score = 0;
   availableQuestions = [...questions];
-  $(document).ready(function(){
-    var secs = 0;
-    var id = setInterval(function(){ 
-        secs++; console.log(secs);
-      if(secs> 5){
-        clearInterval(id);
-        alert('Total Time: ' + secs + ' seconds');
-       }
+  function startTimer(duration, display) {
+    var timer = duration, seconds;
+    setInterval(function () {
+        
+        seconds = parseInt(timer % 30, 10);
+
+        
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
     }, 1000);
-    });
+}
+
+window.onload = function () {
+    var fiveMinutes = 30,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
   getNewQuestion();
 }
 getNewQuestion = () => {
