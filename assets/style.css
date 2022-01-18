@@ -13,10 +13,14 @@ h1 {
   font-size: 4.2rem;
   margin-bottom: 4rem;
 }
-.timer, .timer2 {
+.timer .timer2 {
   color: white;
   font-size: 2.5rem;
 
+}
+.timer2 {
+  color: white;
+  font-size: 2.5rem;
 }
 h2 {
     font-size: 4.2rem;
