@@ -60,6 +60,16 @@ startGame = () => {
   questionCounter = 0;
   score = 0;
   availableQuestions = [...questions];
+  $(document).ready(function(){
+    var secs = 0;
+    var id = setInterval(function(){ 
+        secs++; console.log(secs);
+      if(secs> 5){
+        clearInterval(id);
+        alert('Total Time: ' + secs + ' seconds');
+       }
+    }, 1000);
+    });
   getNewQuestion();
 }
 getNewQuestion = () => {
