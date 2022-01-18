@@ -65,7 +65,7 @@ startGame = () => {
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore",score);
-    return window.location.href("../end.html");
+    return window.location.assign("/Multi-Question-Quiz/end.html");
   }
   questionCounter ++
   progressText.innerText = `question ${questionCounter} of ${MAX_QUESTIONS}`;
