@@ -73,7 +73,7 @@ startGame = () => {
         display.textContent = seconds;
 
         if (--timer < 0) {
-            timer = alert("Time has run out try again");
+            timer = alert("Time has run out REFRESH and try again");
         }
     }, 1000);
 }
@@ -88,7 +88,7 @@ window.onload = function () {
 getNewQuestion = () => {
   if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
     localStorage.setItem("mostRecentScore",score);
-    return window.location.assign("/Multi-Question-Quiz/end.html");
+    return window.location.href = "end.html";
   }
   questionCounter ++
   progressText.innerText = `question ${questionCounter} of ${MAX_QUESTIONS}`;
